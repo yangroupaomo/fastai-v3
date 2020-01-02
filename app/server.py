@@ -13,6 +13,7 @@ export_file_url = 'https://drive.google.com/uc?export=download&id=1jpfa2Zmi-hiXK
 export_file_name = 'export.pkl'
 
 classes = ['glass', 'trash', 'plastic', 'metal', 'paper', 'cardboard']
+path = Path(__file__).parent
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
